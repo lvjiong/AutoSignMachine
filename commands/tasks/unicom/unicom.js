@@ -191,7 +191,7 @@ var start = async (params) => {
   })
 
   // 首页-牛气-秒杀抢兑
-  await scheduler.regTask('NiujieSpikePrize', async (request) => {
+/*  await scheduler.regTask('NiujieSpikePrize', async (request) => {
     await require('./Niujie').spikePrize(request, options)
   }, {
     ...taskOption,
@@ -212,7 +212,7 @@ var start = async (params) => {
     isCircle: true,
     intervalTime: 1 * 3600,
     ...taskOption
-  })
+  })*/
 }
 module.exports = {
   start
